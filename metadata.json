@@ -1,0 +1,6 @@
+{
+  "name": "Ravi Kewat Portfolio",
+  "description": "Personal developer portfolio website for Ravi Kewat, B.Tech CSE student at SATI Vidisha, built following the SATI Coding Club guidebook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

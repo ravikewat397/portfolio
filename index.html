@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Kewat | B.Tech CSE Student &amp; Aspiring Software Developer</title>
+  <meta name="description" content="Personal portfolio of Ravi Kewat, second-year B.Tech CSE student at SATI, Vidisha. Explore featured projects in Python, web development, and problem solving." />
+  
+  <!-- OpenGraph Social Metadata -->
+  <meta property="og:title" content="Ravi Kewat | B.Tech CSE Student &amp; Aspiring Software Developer" />
+  <meta property="og:description" content="Personal portfolio of Ravi Kewat, second-year B.Tech CSE student at SATI, Vidisha. Explore featured projects in Python, web development, and problem solving." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Favicon: Clean SVG Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f172a'/><text x='16' y='21' font-family='sans-serif' font-weight='bold' font-size='14' fill='%233b82f6' text-anchor='middle'>RK</text></svg>" />
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       Navigation Header: Top Bar Contract (3 Zones)
+       ========================================================================= -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- Zone 1: Single-Line Brand Wordmark -->
+      <a href="#hero" class="brand-link" aria-label="Ravi Kewat Portfolio Home">
+        <span class="brand-badge" aria-hidden="true">RK</span>
+        <span class="brand-name">Ravi Kewat</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Header Controls (Theme Toggle & Mobile Menu) -->
+      <div class="header-actions">
+        <!-- Light / Dark Theme Toggle Button -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="theme-icon-moon" style="display: none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Navigation Menu Toggle -->
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content
+       ========================================================================= -->
+  <main id="main-content">
+    <!-- -----------------------------------------------------------------------
+         1. Hero Section
+         ----------------------------------------------------------------------- -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Typographic Column -->
+          <div>
+            <div class="hero-greeting">
+              <span aria-hidden="true">👋</span>
+              <span>Hi, I'm Ravi Kewat.</span>
+            </div>
+            <h1 class="hero-name">B.Tech CSE Student | Aspiring Software Developer</h1>
+            <p class="hero-lead">
+              I build projects, explore new technologies, and keep learning one step at a time.
+            </p>
+
+            <!-- Hero Action Buttons & Social Links -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Projects</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <span>Contact Me</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" x2="19" y1="12" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <!-- Social Links -->
+              <div class="hero-social-links">
+                <a href="https://github.com/ravikewat397" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Ravi's GitHub Profile" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com/in/ravi-kewat-221421382" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Ravi's LinkedIn Profile" title="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Key Metadata Strip (Zero-Pill Discipline) -->
+            <div class="hero-meta-strip">
+              <span class="hero-meta-item">Samrat Ashok Technological Institute (SATI)</span>
+              <span class="hero-meta-sep" aria-hidden="true">·</span>
+              <span class="hero-meta-item">Second Year B.Tech CSE</span>
+              <span class="hero-meta-sep" aria-hidden="true">·</span>
+              <span class="hero-meta-item">Vidisha, Madhya Pradesh, India</span>
+            </div>
+          </div>
+
+          <!-- Hero Profile Image / Visual Card -->
+          <div class="hero-visual-card">
+            <!-- Profile Avatar / Replaceable Photograph Area -->
+            <!-- Note: To use your actual photo, save your picture as 'profile.jpg' in this project folder and replace the placeholder inside -->
+            <div class="profile-photo-container">
+              <div class="profile-avatar-circle" aria-label="Ravi Kewat Profile Portrait Placeholder">
+                <span class="avatar-initials" aria-hidden="true">RK</span>
+              </div>
+              <span class="profile-photo-caption">Profile Photo Placeholder · Replace with <code>profile.jpg</code></span>
+            </div>
+
+            <!-- Terminal Code Card representing student profile -->
+            <div class="hero-code-frame">
+              <div class="code-header">
+                <div class="code-dots" aria-hidden="true">
+                  <div class="code-dot"></div>
+                  <div class="code-dot"></div>
+                  <div class="code-dot"></div>
+                </div>
+                <span class="code-title">student_profile.py</span>
+              </div>
+              <div class="code-line"><span class="code-keyword">student</span> = {</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"name"</span>: <span class="code-string">"Ravi Kewat"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"college"</span>: <span class="code-string">"SATI, Vidisha"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"year"</span>: <span class="code-string">"Second Year (B.Tech CSE)"</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="code-prop">"focus"</span>: <span class="code-string">"Python · Web Dev · Problem Solving"</span></div>
+              <div class="code-line">}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         2. About Me Section
+         ----------------------------------------------------------------------- -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">My journey as a computer science undergraduate and my daily approach to programming.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Primary Honest Student Narrative -->
+          <div class="about-text">
+            <p class="about-lead-quote">
+              "Hello! I'm Ravi Kewat, a second-year B.Tech Computer Science and Engineering student at SATI, Vidisha. I have basic knowledge of HTML, CSS, Python, C, C++, Java, Excel, and Linux. I enjoy learning new technologies, improving my programming skills, solving problems, and building practical projects. I am interested in software development and continuously working to grow as a developer."
+            </p>
+            <p>
+              Rather than rushing into buzzwords, I prioritize understanding core computer science logic, object-oriented principles, and clean problem solving. Whether developing command-line utilities in Python or building web interfaces, I enjoy seeing abstract logic transform into running, useful software.
+            </p>
+          </div>
+
+          <!-- Hobbies and Interests Strip -->
+          <div class="about-aside-col">
+            <h3 class="hobbies-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m4.93 4.93 4.24 4.24"></path>
+                <path d="m14.83 9.17 4.24-4.24"></path>
+                <path d="m14.83 14.83 4.24 4.24"></path>
+                <path d="m9.17 14.83-4.24 4.24"></path>
+                <circle cx="12" cy="12" r="4"></circle>
+              </svg>
+              <span>Hobbies &amp; Interests</span>
+            </h3>
+            
+            <div class="hobbies-grid">
+              <div class="hobby-card">
+                <span class="hobby-icon" aria-hidden="true">🏋️‍♂️</span>
+                <div>
+                  <h4 class="hobby-name">Gym Workouts</h4>
+                  <p class="hobby-desc">Fitness, consistency, and discipline</p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <span class="hobby-icon" aria-hidden="true">📚</span>
+                <div>
+                  <h4 class="hobby-name">Reading Novels</h4>
+                  <p class="hobby-desc">Perspective, storytelling, and focus</p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <span class="hobby-icon" aria-hidden="true">📷</span>
+                <div>
+                  <h4 class="hobby-name">Photography</h4>
+                  <p class="hobby-desc">Visual framing and attention to detail</p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <span class="hobby-icon" aria-hidden="true">💻</span>
+                <div>
+                  <h4 class="hobby-name">New Technologies</h4>
+                  <p class="hobby-desc">Exploring software tools and concepts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         3. Technical Skills Section
+         ----------------------------------------------------------------------- -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Technical Stack</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Real skills categorized cleanly without fake percentage bars or exaggerated claims.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Programming Languages</h3>
+                <span class="skill-cat-desc">Core languages and syntax</span>
+              </div>
+            </div>
+
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-level-text">Core, OOP &amp; Libraries</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">C Programming</span>
+                <span class="skill-level-text">Fundamentals &amp; Logic</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">C++</span>
+                <span class="skill-level-text">Basic Concepts &amp; OOP</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Java</span>
+                <span class="skill-level-text">Fundamental Syntax</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" x2="22" y1="12" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Web Development</h3>
+                <span class="skill-cat-desc">Building web pages</span>
+              </div>
+            </div>
+
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level-text">Semantic Page Structure</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level-text">Layouts, Flexbox &amp; Styling</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Tools and Other Skills -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Tools &amp; Practical Skills</h3>
+                <span class="skill-cat-desc">Workflow &amp; systems</span>
+              </div>
+            </div>
+
+            <ul class="skill-items-list">
+              <li class="skill-item">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-level-text">Version Control &amp; Repositories</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Basic Linux</span>
+                <span class="skill-level-text">Command Line Essentials</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Microsoft Excel</span>
+                <span class="skill-level-text">Data Organization &amp; Formulas</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-level-text">Algorithmic Thinking</span>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Python File Handling &amp; OOP</span>
+                <span class="skill-level-text">Class Structures &amp; I/O</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         4. Featured Projects Section
+         ----------------------------------------------------------------------- -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Portfolio Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real student projects created to explore practical software development, algorithms, and application logic.</p>
+        </div>
+
+        <!-- Primary Featured Projects Grid (3 Cards in Exact Order) -->
+        <div class="projects-grid">
+          <!-- PROJECT 1: Dynamic QR Code Generator -->
+          <article class="project-card">
+            <div class="project-media-frame">
+              <!-- Replaceable Project Screenshot Mockup -->
+              <svg class="project-mockup-graphic" viewBox="0 0 280 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="QR Code Generator Visual Representation">
+                <rect width="280" height="140" fill="#090d16" rx="8"/>
+                <rect x="0" y="0" width="280" height="24" fill="#162238"/>
+                <circle cx="16" cy="12" r="3" fill="#ef4444"/>
+                <circle cx="28" cy="12" r="3" fill="#f59e0b"/>
+                <circle cx="40" cy="12" r="3" fill="#10b981"/>
+                <text x="140" y="16" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="monospace">python-QR-code</text>
+                <!-- QR Visual Graphics -->
+                <rect x="110" y="42" width="60" height="60" fill="#ffffff" rx="4"/>
+                <rect x="116" y="48" width="16" height="16" fill="#090d16"/>
+                <rect x="120" y="52" width="8" height="8" fill="#ffffff"/>
+                <rect x="148" y="48" width="16" height="16" fill="#090d16"/>
+                <rect x="152" y="52" width="8" height="8" fill="#ffffff"/>
+                <rect x="116" y="80" width="16" height="16" fill="#090d16"/>
+                <rect x="120" y="84" width="8" height="8" fill="#ffffff"/>
+                <rect x="140" y="70" width="8" height="8" fill="#090d16"/>
+                <rect x="152" y="80" width="12" height="12" fill="#090d16"/>
+                <text x="140" y="122" fill="#3b82f6" font-size="10" font-weight="600" text-anchor="middle" font-family="sans-serif">Custom QR Generator</text>
+              </svg>
+            </div>
+
+            <div class="project-content">
+              <span class="project-order-tag">Project 01 · Featured</span>
+              <h3 class="project-title">Dynamic QR Code Generator</h3>
+              <p class="project-desc">
+                A Python-based Dynamic QR Code Generator that creates QR codes from text or URLs. The project focuses on making QR code generation convenient, with customization and image-export features where implemented.
+              </p>
+
+              <!-- Zero-Pill Tech Metadata -->
+              <div class="project-tech-meta">
+                <span>Python</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>QR Code Library</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>Pillow (PIL)</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/ravikewat397/python-QR-code" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="View python-QR-code repository on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: AI-Powered Criminal Network Analysis -->
+          <article class="project-card">
+            <div class="project-media-frame">
+              <!-- Replaceable Project Screenshot Mockup -->
+              <svg class="project-mockup-graphic" viewBox="0 0 280 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Criminal Network Analysis Node Graph Representation">
+                <rect width="280" height="140" fill="#090d16" rx="8"/>
+                <rect x="0" y="0" width="280" height="24" fill="#162238"/>
+                <circle cx="16" cy="12" r="3" fill="#ef4444"/>
+                <circle cx="28" cy="12" r="3" fill="#f59e0b"/>
+                <circle cx="40" cy="12" r="3" fill="#10b981"/>
+                <text x="140" y="16" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="monospace">sih-criminal (SIH)</text>
+                <!-- Network Visual Graph -->
+                <line x1="80" y1="58" x2="140" y2="78" stroke="#3b82f6" stroke-width="2" stroke-dasharray="3 3"/>
+                <line x1="200" y1="58" x2="140" y2="78" stroke="#3b82f6" stroke-width="2"/>
+                <line x1="140" y1="78" x2="110" y2="112" stroke="#3b82f6" stroke-width="1.5"/>
+                <line x1="140" y1="78" x2="170" y2="112" stroke="#3b82f6" stroke-width="1.5"/>
+                <circle cx="140" cy="78" r="14" fill="#1d4ed8"/>
+                <circle cx="140" cy="78" r="7" fill="#60a5fa"/>
+                <circle cx="80" cy="58" r="9" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+                <circle cx="200" cy="58" r="9" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+                <circle cx="110" cy="112" r="7" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+                <circle cx="170" cy="112" r="7" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+              </svg>
+            </div>
+
+            <div class="project-content">
+              <span class="project-order-tag">Project 02 · Smart India Hackathon</span>
+              <h3 class="project-title">AI-Powered Criminal Network Analysis</h3>
+              <p class="project-desc">
+                A Smart India Hackathon project focused on criminal network analysis. The idea is to analyze relationships between entities and present useful connections and network insights through a dashboard.
+              </p>
+
+              <!-- Zero-Pill Tech Metadata -->
+              <div class="project-tech-meta">
+                <span>React</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>Python</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>Data Processing</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/ravikewat397/sih-criminal" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="View sih-criminal repository on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Flappy Bird Game -->
+          <article class="project-card">
+            <div class="project-media-frame">
+              <!-- Replaceable Game Screenshot Mockup -->
+              <svg class="project-mockup-graphic" viewBox="0 0 280 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Flappy Bird Game Canvas Visual Representation">
+                <rect width="280" height="140" fill="#090d16" rx="8"/>
+                <rect x="0" y="0" width="280" height="24" fill="#162238"/>
+                <circle cx="16" cy="12" r="3" fill="#ef4444"/>
+                <circle cx="28" cy="12" r="3" fill="#f59e0b"/>
+                <circle cx="40" cy="12" r="3" fill="#10b981"/>
+                <text x="140" y="16" fill="#94a3b8" font-size="9" text-anchor="middle" font-family="monospace">flapy-game</text>
+                <!-- Game Canvas Representation -->
+                <rect x="60" y="32" width="22" height="42" fill="#10b981" rx="2"/>
+                <rect x="60" y="98" width="22" height="42" fill="#10b981" rx="2"/>
+                <rect x="180" y="32" width="22" height="52" fill="#10b981" rx="2"/>
+                <rect x="180" y="110" width="22" height="30" fill="#10b981" rx="2"/>
+                <!-- Bird Visual -->
+                <circle cx="120" cy="80" r="10" fill="#f59e0b"/>
+                <circle cx="124" cy="77" r="2.5" fill="#090d16"/>
+                <polygon points="128,80 134,82 128,85" fill="#ef4444"/>
+                <text x="140" y="132" fill="#3b82f6" font-size="10" font-weight="600" text-anchor="middle" font-family="sans-serif">Game Logic &amp; Collision</text>
+              </svg>
+            </div>
+
+            <div class="project-content">
+              <span class="project-order-tag">Project 03 · Game Project</span>
+              <h3 class="project-title">Flappy Bird Game</h3>
+              <p class="project-desc">
+                A Flappy Bird-inspired game project created as a programming project. Explore the gameplay, implementation, and logic in the source code.
+              </p>
+
+              <!-- Zero-Pill Tech Metadata -->
+              <div class="project-tech-meta">
+                <span>Python</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>Pygame / Game Logic</span>
+                <span class="tech-sep" aria-hidden="true">·</span>
+                <span>Collision Detection</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/ravikewat397/flapy-game" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="View flapy-game repository on GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------------------------------------------------------------------
+             Additional Python Projects (Compact Cards)
+             --------------------------------------------------------------------- -->
+        <div class="additional-projects-wrapper">
+          <div class="additional-header">
+            <h3 class="additional-title">Additional Python Projects</h3>
+            <p class="additional-subtitle">Compact portfolio projects demonstrating command-line logic, state management, and file handling routines.</p>
+          </div>
+
+          <div class="additional-grid">
+            <!-- 1. To-Do List Application -->
+            <div class="subproject-card">
+              <div class="subproject-icon" aria-hidden="true">📝</div>
+              <div class="subproject-body">
+                <h4 class="subproject-title">To-Do List Application</h4>
+                <p class="subproject-desc">Command-line task manager to add, update, delete, and view tasks with file persistence.</p>
+                <div class="subproject-tech">Python · File Handling · OOP</div>
+              </div>
+            </div>
+
+            <!-- 2. ATM Simulation -->
+            <div class="subproject-card">
+              <div class="subproject-icon" aria-hidden="true">🏧</div>
+              <div class="subproject-body">
+                <h4 class="subproject-title">ATM Simulation</h4>
+                <p class="subproject-desc">Basic ATM application with authentication, balance checking, deposits, withdrawals, and mini statements.</p>
+                <div class="subproject-tech">Python · Logic Formulation · Flow Control</div>
+              </div>
+            </div>
+
+            <!-- 3. Calculator -->
+            <div class="subproject-card">
+              <div class="subproject-icon" aria-hidden="true">🧮</div>
+              <div class="subproject-body">
+                <h4 class="subproject-title">Calculator</h4>
+                <p class="subproject-desc">Basic arithmetic calculator performing addition, subtraction, multiplication, and division with input checks.</p>
+                <div class="subproject-tech">Python · Functions · Math Operations</div>
+              </div>
+            </div>
+
+            <!-- 4. Quiz Game -->
+            <div class="subproject-card">
+              <div class="subproject-icon" aria-hidden="true">❓</div>
+              <div class="subproject-body">
+                <h4 class="subproject-title">Quiz Game</h4>
+                <p class="subproject-desc">Multiple-choice terminal quiz application with question randomized loops and real-time score tracking.</p>
+                <div class="subproject-tech">Python · Control Flow · Data Structures</div>
+              </div>
+            </div>
+
+            <!-- 5. Student Management System -->
+            <div class="subproject-card">
+              <div class="subproject-icon" aria-hidden="true">🎓</div>
+              <div class="subproject-body">
+                <h4 class="subproject-title">Student Management System</h4>
+                <p class="subproject-desc">Student record management system with add, update, delete, search, and display operations.</p>
+                <div class="subproject-tech">Python · OOP · Data Storage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         5. Education Section
+         ----------------------------------------------------------------------- -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Formal schooling and undergraduate degree information.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- B.Tech Degree -->
+          <div class="edu-card">
+            <div class="edu-badge-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-body">
+              <div class="edu-status-tag">Currently Pursuing · Second Year</div>
+              <h3 class="edu-degree">B.Tech — Computer Science and Engineering</h3>
+              <p class="edu-institution">Samrat Ashok Technological Institute (SATI), Vidisha</p>
+              <p class="edu-description">
+                Engaged in foundational coursework covering data structures, algorithms, programming methodologies, computer systems, and practical laboratory projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Class 12 CBSE -->
+          <div class="edu-card">
+            <div class="edu-badge-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                <path d="M6 6h10"></path>
+                <path d="M6 10h10"></path>
+              </svg>
+            </div>
+            <div class="edu-body">
+              <div class="edu-status-tag">Secondary Education · CBSE</div>
+              <h3 class="edu-degree">Class 12 — Senior Secondary</h3>
+              <p class="edu-institution">Central Board of Secondary Education (CBSE)</p>
+              <div class="edu-score-highlight">
+                <span class="score-label">Score:</span>
+                <span class="score-value">83%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 10 CBSE -->
+          <div class="edu-card">
+            <div class="edu-badge-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="edu-body">
+              <div class="edu-status-tag">Secondary School Examination · CBSE</div>
+              <h3 class="edu-degree">Class 10 — High School</h3>
+              <p class="edu-institution">Central Board of Secondary Education (CBSE)</p>
+              <div class="edu-score-highlight">
+                <span class="score-label">Score:</span>
+                <span class="score-value">81%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         6. Achievements & Activities Section
+         ----------------------------------------------------------------------- -->
+    <section id="achievements" class="activities-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Engagement &amp; Activities</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-subtitle">Real participation in technical hackathons, campus clubs, and academic activities.</p>
+        </div>
+
+        <div class="activities-timeline">
+          <!-- 1. Smart India Hackathon (SIH) -->
+          <div class="activity-item">
+            <div class="activity-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <div class="activity-meta">
+                <span>Smart India Hackathon (SIH)</span>
+                <span aria-hidden="true">·</span>
+                <span>Hackathon Participant</span>
+              </div>
+              <h3 class="activity-title">Smart India Hackathon Participation</h3>
+              <p class="activity-desc">
+                Participated in the Smart India Hackathon. Worked on an AI-powered criminal network analysis project concept aimed at analyzing entity connections and data relationships for law enforcement insights.
+              </p>
+              <div class="activity-link-strip">
+                <a href="https://github.com/ravikewat397/sih-criminal" target="_blank" rel="noopener noreferrer" class="activity-code-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                  <span>github.com/ravikewat397/sih-criminal</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. BIS Standards Club -->
+          <div class="activity-item">
+            <div class="activity-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <div class="activity-meta">
+                <span>Bureau of Indian Standards (BIS)</span>
+                <span aria-hidden="true">·</span>
+                <span>Club Event</span>
+              </div>
+              <h3 class="activity-title">BIS Standards Club Crossword Puzzle Competition</h3>
+              <p class="activity-desc">
+                Participated in the Crossword Puzzle Competition organized in association with the BIS Standards Club, testing awareness of quality standards, technical terminology, and precision.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Coding Club SATI -->
+          <div class="activity-item">
+            <div class="activity-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <div class="activity-meta">
+                <span>Samrat Ashok Technological Institute</span>
+                <span aria-hidden="true">·</span>
+                <span>Active Member</span>
+              </div>
+              <h3 class="activity-title">Coding Club SATI Activities</h3>
+              <p class="activity-desc">
+                Active member and participant in Coding Club SATI. Engaged in technical learning, peer coding sessions, and software development exercises following the "Build Your Portfolio" club roadmap.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Certificates and Workshops (Editable Section) -->
+          <div class="activity-item">
+            <div class="activity-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" x2="8" y1="13" y2="13"></line>
+                <line x1="16" x2="8" y1="17" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="activity-content">
+              <div class="activity-meta">
+                <span>Certificates &amp; Workshops</span>
+                <span aria-hidden="true">·</span>
+                <span>Continuous Learning</span>
+              </div>
+              <h3 class="activity-title">Technical Workshops &amp; Certificates</h3>
+              <p class="activity-desc">
+                Attending departmental technical workshops and pursuing online courses to strengthen computer science fundamentals.
+              </p>
+              <div class="editable-notice">
+                <span class="editable-badge">Editable Space</span>
+                <span>Add your upcoming course certificates, NPTEL scores, or workshop dates here as you earn them.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         7. Contact Section (Direct Links & Functional Actions)
+         ----------------------------------------------------------------------- -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-container-box">
+          <div class="contact-layout">
+            <!-- Message Column -->
+            <div class="contact-message-col">
+              <span class="section-kicker">Get In Touch</span>
+              <h3>Let's Connect</h3>
+              <p class="contact-invitation-text">
+                "Have a project idea or want to connect? Feel free to reach out. I'm always interested in learning, collaborating, and building useful things."
+              </p>
+              
+              <div class="contact-location-info">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Vidisha, Madhya Pradesh, India</span>
+              </div>
+
+              <!-- Resume Download Button -->
+              <div class="resume-download-box">
+                <a href="./resume.pdf" download="Ravi_Kewat_Resume.pdf" class="btn btn-primary" id="resume-btn" title="Download Ravi Kewat's Resume PDF">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" x2="12" y1="15" y2="3"></line>
+                  </svg>
+                  <span>Download Resume (PDF)</span>
+                </a>
+                <p class="resume-note">Place your <code>resume.pdf</code> file in this website folder to make it downloadable.</p>
+              </div>
+            </div>
+
+            <!-- Functional Contact Cards -->
+            <div class="contact-channels-grid">
+              <!-- Channel 1: Email (Direct mailto + Copy Button) -->
+              <div class="contact-channel-card">
+                <a href="mailto:ravi22kewat@gmail.com" class="channel-main-link" title="Send email to ravi22kewat@gmail.com">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="channel-name">Email</span>
+                    <span class="channel-handle">ravi22kewat@gmail.com</span>
+                  </div>
+                </a>
+                <button type="button" id="copy-email-btn" class="copy-btn" data-email="ravi22kewat@gmail.com" aria-label="Copy email address" title="Copy email address">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Channel 2: Phone (Direct tel link + Copy Button) -->
+              <div class="contact-channel-card">
+                <a href="tel:8287308242" class="channel-main-link" title="Call Ravi Kewat at 8287308242">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="channel-name">Phone</span>
+                    <span class="channel-handle">+91 8287308242</span>
+                  </div>
+                </a>
+                <button type="button" id="copy-phone-btn" class="copy-btn" data-phone="8287308242" aria-label="Copy phone number" title="Copy phone number">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Channel 3: GitHub Profile -->
+              <a href="https://github.com/ravikewat397" target="_blank" rel="noopener noreferrer" class="contact-channel-card contact-link-row" title="Open Ravi's GitHub Profile">
+                <div class="channel-main-link">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="channel-name">GitHub</span>
+                    <span class="channel-handle">github.com/ravikewat397</span>
+                  </div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" x2="21" y1="14" y2="3"></line>
+                </svg>
+              </a>
+
+              <!-- Channel 4: LinkedIn Profile -->
+              <a href="https://linkedin.com/in/ravi-kewat-221421382" target="_blank" rel="noopener noreferrer" class="contact-channel-card contact-link-row" title="Open Ravi's LinkedIn Profile">
+                <div class="channel-main-link">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect width="4" height="12" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="channel-name">LinkedIn</span>
+                    <span class="channel-handle">linkedin.com/in/ravi-kewat-221421382</span>
+                  </div>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" x2="21" y1="14" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-author">
+        <span>&copy; <span id="current-year">2026</span> <strong>Ravi Kewat</strong>. Built with semantic HTML, CSS &amp; JavaScript.</span>
+      </div>
+      <div class="footer-guidebook">
+        <span>SATI Coding Club · "Build Your Portfolio" Guidebook</span>
+      </div>
+      <div>
+        <a href="#hero" class="back-to-top-link">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="floating-back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
